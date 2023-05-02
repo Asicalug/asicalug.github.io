@@ -11,6 +11,21 @@
         transition: all 0.3s;
     }
 
+    .outlinebox {
+        max-width: 50%;
+        max-height: 50px;
+        min-width: 350px;
+        min-height: 45px;
+        border-radius: 15px;
+        background-color: rgb(44, 44, 44);
+        margin: auto;
+        transition: all 0.3s;
+    }
+
+    .videos {
+        display: none;
+    }
+
     .goodbox:hover {
         max-width: 55%;
         max-height: 550px;
@@ -210,4 +225,21 @@
         margin-top: 25px;
         width: 75px;
         height: 75px;
+    }
+
+    .closevid {
+        display: none;
+        position: fixed;
+        width: 32px;
+        height: 32px;
+        right: 350px;
+        background-image: url(close.svg);
+        margin: 20px;
+        transition: all 0.3s;
+        top: 200px;
+    }
+
+    #weirdasfngl {
+        display: none;
+        width: 200px;
     }
