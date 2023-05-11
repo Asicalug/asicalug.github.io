@@ -6,24 +6,12 @@
         min-width: 350px;
         min-height: 450px;
         border-radius: 15px;
-        background-color: rgb(44, 44, 44, 0.5);
+        background-color: #720000
+;
         margin: auto;
         transition: all 0.3s;
-    }
-
-    .outlinebox {
-        max-width: 50%;
-        max-height: 50px;
-        min-width: 350px;
-        min-height: 45px;
-        border-radius: 15px;
-        background-color: rgb(44, 44, 44);
-        margin: auto;
-        transition: all 0.3s;
-    }
-
-    .videos {
-        display: none;
+        box-shadow: 0px 0px 31px 6px #720000;
+        background-image: linear-gradient(#000000, #720000);
     }
 
     .goodbox:hover {
@@ -32,7 +20,10 @@
         min-width: 400px;
         min-height: 500px;
         border-radius: 15px;
-        background: rgb(45, 45, 45, 0.9);
+        background: #720000
+;
+        box-shadow: 0px 0px 31px 6px #720000;
+        background-image: linear-gradient(#000000, #720000);
     }
 
     body {
@@ -62,11 +53,12 @@
         bottom: 10px;
         right: 10px;
         border-radius: 15px;
-        background-image: url(white-right-arrow.svg);
-        background-color: rgb(44, 44, 44, 0.5);
+        background-image: url(images/white-right-arrow.svg), linear-gradient(#000000, #720000);
         width: 16px;
         height: 64px;
         transition: all 0.3s;
+        box-shadow: 0px 0px 31px 6px #720000
+;
     }
 
     .endofpage {
@@ -76,10 +68,12 @@
         bottom: 10px;
         right: 10px;
         border-radius: 15px;
-        background-color: rgb(88, 37, 37);
+        background-image: linear-gradient(#000000, #720000);
         width: 0px;
         height: 64px;
         transition: all 0.3s;
+        box-shadow: 0px 0px 31px 6px #720000
+;
     }
     
 
@@ -100,8 +94,11 @@
         bottom: 10px;
         right: 10px;
         border-radius: 15px;
-        background-image: url(white-right-arrow.svg);
-        background-color: rgb(44, 44, 44, 0.5);
+        background-image: url(images/white-right-arrow.svg), linear-gradient(#000000, #720000);        background-color: #720000
+;
+        box-shadow: 0px 0px 31px 6px #720000
+;
+
         width: 16px;
         height: 64px;
         transition: all 0.3s;
@@ -111,12 +108,16 @@
         display: block;
         position: fixed;
         top: 5px;
-        right: 5pxQQQQQ;
+        right: 5px;
         width: 25%;
         height: 48px;
-        background-color: rgb(44, 44, 44, 0.5);
+        background-color: #720000
+;
         border-radius: 15px;
         transition: all 0.3s;
+        box-shadow: 0px 0px 31px 6px #720000;
+        background-image: linear-gradient(#720000, #000000);
+
     }
 
     .openmenu {
@@ -127,7 +128,7 @@
         height: 32px;
         top: 13px;
         right: 8px;
-        background-image: url(openmenu.svg);
+        background-image: url(images/openmenu.svg);
         transition: all 0.3s;
     }
 
@@ -148,14 +149,32 @@
         visibility: hidden;
         color: #ffffff;
     }
+
+    .blurry {
+        position: absolute;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        z-index: 3;
+        align-items: center;
+    }
     
     .damenu {
-        position: fixed;
-        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-image: linear-gradient(#000000, #720000);
+
+        z-index: 5;
         width: 0px;
         height: 0px;
         border-radius: 30px;
-        background-color: rgb(20, 20, 20, 0.95);
+        background-color: #720000
+;
         transition: all 0.3s;
     }
 
@@ -164,7 +183,7 @@
         position: fixed;
         width: 32px;
         height: 32px;
-        background-image: url(close.svg);
+        background-image: url(images/close.svg);
         margin: 20px;
         transition: all 0.3s;
     }
@@ -174,7 +193,7 @@
         position: fixed;
         width: 48px;
         height: 48px;
-        background-image: url(close.svg);
+        background-image: url(images/close.svg);
         margin: 20px;
     }
     
@@ -196,7 +215,7 @@
     .linkimage {
         visibility: hidden;
         margin-top: 30px;
-        background-image: url(link.svg);
+        background-image: url(images/link.svg);
         width: 118px;
         height: 50px;
         transition: all 0.3s;
@@ -205,14 +224,14 @@
     .linkimage:hover {
         visibility: hidden;
         margin-top: 30px;
-        background-image: url(link.svg);
+        background-image: url(images/link.svg);
         width: 177px;
         height: 75px;
     }
 
     .homeimage {
         visibility: hidden;
-        background-image: url(home.svg);
+        background-image: url(images/home.svg);
         margin-top: 25px;
         width: 50px;
         height: 50px;
@@ -221,25 +240,8 @@
 
     .homeimage:hover {
         visibility: hidden;
-        background-image: url(home.svg);
+        background-image: url(images/home.svg);
         margin-top: 25px;
         width: 75px;
         height: 75px;
-    }
-
-    .closevid {
-        display: none;
-        position: fixed;
-        width: 32px;
-        height: 32px;
-        right: 350px;
-        background-image: url(close.svg);
-        margin: 20px;
-        transition: all 0.3s;
-        top: 200px;
-    }
-
-    #weirdasfngl {
-        display: none;
-        width: 200px;
     }
