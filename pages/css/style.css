@@ -16,13 +16,22 @@
     .avatar {
         position: relative;
         margin-left: 25px;
+        border-radius: 30px;
         top: 25px;
-        box-shadow: 0px 0px 6px 1px #5842ff;
+        box-shadow: 0px 0px 6px 1px #007ade;
         color: rgb(255, 255, 255);
         width: 50px;
         height: 50px;
     }
-
+    .description {
+        background-color: rgb(49, 49, 49);
+        height: fit-content;
+        width: fit-content;
+        padding: 5px;
+        border-radius: 15px;
+        color: aliceblue;
+        margin: auto;
+    }
     .revealcontacts {
         width: 15px;
         background-color: gray;
