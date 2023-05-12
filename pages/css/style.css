@@ -16,26 +16,30 @@
     .avatar {
         position: relative;
         margin-left: 25px;
-        border-radius: 30px;
-        top: 25px;
+        border-radius: 60px;
+        top: 18px;
         box-shadow: 0px 0px 6px 1px #007ade;
         color: rgb(255, 255, 255);
-        width: 50px;
-        height: 50px;
+        width: 64px;
+        height: 64px;
     }
     .description {
+        position: relative;
         background-color: rgb(49, 49, 49);
         height: fit-content;
         width: fit-content;
-        padding: 5px;
+        padding: 10px;
+        bottom: 32px;
         border-radius: 15px;
         color: aliceblue;
         margin: auto;
+        font-size: large;
     }
     .revealcontacts {
+        position: relative;
         width: 15px;
         background-color: gray;
-        bottom: 0px;
+        bottom: 25px;
         border-radius: 30px;
         margin-left: auto;
         margin-right: auto;
@@ -47,10 +51,29 @@
         width: 15px;
         background-color: gray;
         border-radius: 30px;
-        bottom: 68px;
+        bottom: 93px;
         margin-left: auto;
         margin-right: auto;
         transform: rotate(270deg);
+    }
+    .contacts {
+        position: relative;
+        visibility: hidden;
+        margin: auto;
+        width: 90%;
+        height: 0px;
+        background-color: rgb(69, 69, 69);
+        bottom: 150px;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+    .discord {
+        position: relative;
+        top: 25px;
+        width: 32px;
+        height: 24px;
+        background-image: url(../../images/discord.svg);
+        left: 15px;
     }
 /*Other*/
 

@@ -13,7 +13,7 @@
     <main>
         <div class="topbar">
             <div class="avatar">
-                <img src="https://avatars.githubusercontent.com/u/104523683?s=50&v=4" style="border-radius: 30px;" alt="pfp">
+                <img src="https://avatars.githubusercontent.com/u/104523683?s=64&v=4" style="border-radius: 60px;" alt="pfp">
             </div>
             <div class="description">short asf individual</div>
             <div class="revealcontacts">
@@ -21,6 +21,9 @@
             </div>
             <div class="unrevealcontacts">
                 <img src="../images/white-right-arrow.svg"/>
+            </div>
+            <div class="contacts">
+                <div class="discord"></div>
             </div>
         </div>
     </main>
@@ -39,7 +42,12 @@
                     'transition': 'all 0.3s'
                 });
                 $('.topbar').css( {
-                    'height': '180px'
+                    'height': '250px'
+                });
+                $('.contacts').css( {
+                    'visibility': 'visible',
+                    'height': '75px',
+                    'bottom': '90px'
                 });
             });
             $('.unrevealcontacts').click(function() {
@@ -55,6 +63,11 @@
                 });
                 $('.topbar').css( {
                     'height': '100px'
+                });
+                $('.contacts').css( {
+                    'visibility': 'hidden',
+                    'height': '0px',
+                    'bottom': '150px',
                 });
             });
     </script>
