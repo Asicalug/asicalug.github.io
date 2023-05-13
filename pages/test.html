@@ -23,8 +23,14 @@
                 <img src="../images/white-right-arrow.svg"/>
             </div>
             <div class="contacts">
-                <div class="discord"></div>
+                <div class="acontact">
+                    <div class="discord"></div>
+                </div>
             </div>
+        </div>
+        <div class="blur"></div>
+        <div class="discordcontact">
+            <div></div>
         </div>
     </main>
     
@@ -49,6 +55,14 @@
                     'height': '75px',
                     'bottom': '90px'
                 });
+                $('.discord').css( {
+                    'height': '24px',
+                    'width': '32px',
+                });
+                $('.acontact').css( {
+                    'visibility': 'visible',
+                    'height': '50px'
+                });
             });
             $('.unrevealcontacts').click(function() {
                 $(this).css( {
@@ -69,6 +83,36 @@
                     'height': '0px',
                     'bottom': '150px',
                 });
+                $('.discord').css( {
+                    'height': '0px',
+                    'width': '0px',
+                });
+                $('.acontact').css( {
+                    'visibility': 'hidden',
+                    'height': '0px'
+                });
+            });
+            $('.discord').click(function() { 
+                $('.discordcontact').css( {
+                    'align-items': 'center',
+                    'width': '75%',
+                    'height': '75%',
+                    'visibility': 'visible'
+                });
+                $('.blur').css( {
+                    'visibility': 'visible'
+                });
+            });
+            $('.blur').click(function() { 
+                $('.discordcontact').css( {
+                    'height': '0px',
+                    'width': '0px',
+                    'visibility': 'hidden',
+                });
+                $(this).css({
+                    'visibility': 'hidden',
+                })
+
             });
     </script>
 </body>

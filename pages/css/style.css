@@ -44,6 +44,10 @@
         margin-left: auto;
         margin-right: auto;
         transform: rotate(270deg);
+        transition: ease-out 0.2s;
+    }
+    .revealcontacts:hover {
+        box-shadow: 0 0 2px 2px gray;
     }
     .unrevealcontacts {
         position: relative;
@@ -55,6 +59,9 @@
         margin-left: auto;
         margin-right: auto;
         transform: rotate(270deg);
+    }
+    .unrevealcontacts:hover {
+        box-shadow: 0 0 2px 2px gray;
     }
     .contacts {
         position: relative;
@@ -69,14 +76,52 @@
     }
     .discord {
         position: relative;
-        top: 25px;
+        top: 13px;
         width: 32px;
-        height: 24px;
+        height: 0px;
         background-image: url(../../images/discord.svg);
         left: 15px;
+        transition: all 0.3s;
+    }
+    .discordcontact {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        z-index: 5;
+        width: 0px;
+        height: 0px;
+        border-radius: 30px;
+        background-color: rgb(44, 44, 44)
+;
+        transition: all 0.3s;
+    }
+    .acontact {
+        position: relative;
+        visibility: hidden;
+        margin-left: 10px;
+        top: 15px;
+        width: 64px;
+        height: 0px;
+        background-color: rgb(44, 44, 44);
+        bottom: 15px;
+        border-radius: 15px;
+        transition: 0.3s;
     }
 /*Other*/
-
+    .blur {
+        position: absolute;
+        backdrop-filter: blur(10px);
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        z-index: 3;
+        align-items: center;
+    }
 
 /*Animations*/
     @keyframes revealTopbar {
