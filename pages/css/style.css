@@ -84,6 +84,7 @@
         transition: all 0.3s;
     }
     .discordcontact {
+        visibility: hidden;
         position: absolute;
         left: 0;
         right: 0;
@@ -111,6 +112,39 @@
         border-radius: 15px;
         transition: 0.3s;
     }
+    .dcontact {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 75%;
+        height: 75%;
+        background-color: #313338;
+        border-radius: 15px;
+    }
+    .line {
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        top: 0px;
+        bottom: 100px;
+        right: 0px;
+        left: 0px;
+        margin: auto;
+        background-color: #313400;
+    }
+    .pfp {
+        position: relative;
+        width: 64;
+        height: 64;
+        border-radius: 64px;
+        box-shadow: 0px 0px 6px 6px #23a55a;
+        top: 25px;
+        left: 25px;
+    }
+
 /*Other*/
     .blur {
         position: absolute;
@@ -122,7 +156,17 @@
         z-index: 3;
         align-items: center;
     }
-
+    .discordembed {
+        position: relative;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        padding: 15px;
+        background-color: rgb(30, 30, 30);
+        border-radius: 15px;
+        color: aliceblue;
+    }
+    
 /*Animations*/
     @keyframes revealTopbar {
         from {
