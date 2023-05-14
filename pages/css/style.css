@@ -1,3 +1,21 @@
+/*Containers*/
+    .container {
+        max-width: 400px;
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+    }
+    .dcontainer {
+        width: 250px;
+        height: 100px;
+        background-image: linear-gradient(to bottom right, #770000, #000000);
+        position: relative;
+        top: 25px;
+        border-radius: 15px;
+        margin: auto;
+    }
 /*BackGround*/
     body {
         background-color: rgb(22, 22, 22);
@@ -11,7 +29,7 @@
         background-color: rgb(79, 79, 79);
         transition: all 0.3s;
 
-        animation: revealTopbar ease-out 0.6s;
+        animation: revealTopbar ease-out 1s;
     }
     .avatar {
         position: relative;
@@ -124,7 +142,7 @@
         background-color: #313338;
         border-radius: 15px;
     }
-    .line {
+    .linediscord {
         position: absolute;
         height: 5px;
         width: 100%;
@@ -136,13 +154,19 @@
         background-color: #313400;
     }
     .pfp {
-        position: relative;
+        position: absolute;
         width: 64;
         height: 64;
         border-radius: 64px;
         box-shadow: 0px 0px 6px 6px #23a55a;
-        top: 25px;
-        left: 25px;
+        justify-content: center;
+        top: 36px;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 150px;
+        left: 0;
+        
     }
 
 /*Other*/
@@ -171,7 +195,7 @@
     @keyframes revealTopbar {
         from {
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateX(-200%);
         }
         to {
         opacity: 1;
