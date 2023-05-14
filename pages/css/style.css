@@ -1,6 +1,7 @@
 /*Containers*/
     .container {
         max-width: 400px;
+        max-height: 500px;
         margin-inline: auto;
         display: flex;
         justify-content: center;
@@ -139,19 +140,15 @@
         margin: auto;
         width: 75%;
         height: 75%;
+        background-image: linear-gradient(to bottom , #770000, #000000);
         background-color: #313338;
+        box-shadow: 0px 0px 0px 3px #770000;
         border-radius: 15px;
     }
-    .linediscord {
-        position: absolute;
-        height: 5px;
-        width: 100%;
-        top: 0px;
-        bottom: 100px;
-        right: 0px;
-        left: 0px;
-        margin: auto;
-        background-color: #313400;
+    .ddescripion {
+        background-color: #111214;
+        width: 80%;
+        height: 50%;
     }
     .pfp {
         position: absolute;
