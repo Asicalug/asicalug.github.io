@@ -148,11 +148,11 @@
         position: absolute;
         background-color: #111214;
         width: 80%;
-        height: 40%;
+        height: 50%;
         border-radius: 15px;
         color: aliceblue;
         opacity: 0.8;
-        top: 64px;
+        top: 72px;
         bottom: 0;
         right: 0;
         left: 0;
@@ -171,9 +171,9 @@
         top: 0;
         bottom: 0;
         right: 150px;
-        left: 0;
-        
+        left: 0; 
     }
+    
 
 /*Other*/
     .blur {
@@ -196,6 +196,19 @@
         border-radius: 15px;
         color: aliceblue;
     }
+    .line {
+        width: 95%;
+        height: 2px;
+        background-color: aliceblue;
+        position: absolute;
+        top: 0;
+        bottom: 30px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        border-radius: 5px;
+    }
+    
     
 /*Animations*/
     @keyframes revealTopbar {
