@@ -31,10 +31,16 @@
                 <div class="acontact">
                     <div class="discord"></div>
                 </div>
+                <div class="scontact">
+                    <div class="github"></div>
+                </div>
             </div>
         </div>
-        <div class="blur"></div>
-        <div class="discordcontact container">
+
+        <!--Discord Account-->
+
+        <div class="blurd">
+            <div class="discordcontact dcontainer">
             <div class="center">
                 <div class="dcontact">
                     <div class="dcontainer">
@@ -46,19 +52,45 @@
                     </div>
                     <div class="ddescription">
                         <p><br>Asicalug#0001</p>
-                        <div class="smallline"></div>
+                        <div class="dsmallline"></div>
                         <div class="addmediscord">
                             <div style="color: aliceblue; margin: auto;">Add Me<img style="margin-bottom: 2px; margin-left: 10px; " class="rotate-45" id="addmedisc" src="../images/plus.svg"></div>
                         </div>
-                            <div class="line"></div>
+                            <div class="dline"></div>
                         <p style="font-weight: 700;"><br>ABOUT ME :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                        <div class="line2"></div>
                         <p>Wait , who's Mincrfter?<br> Cy0ze is god</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class=""></div>
+
+        <!--Github Account-->
+
+        <div class="blurg">
+            <div class="githubcontact dcontainer">
+            <div class="center">
+                <div class="gcontact">
+                    <div class="dcontainer">
+                        <img class="pfp" src="https://cdn.discordapp.com/avatars/1080643375960707092/b4e2a3f1e27d130f37ee96d1fe81a748.webp?size=64"/>
+                    </div>
+                    <div class="gbadges">
+                        <img src="../images/Active_Developer.svg"/>
+                        <img src="../images/HypeSquad_Brilliance.svg"/>
+                    </div>
+                    <div class="gdescription">
+                        <p><br>Asicalug#0001</p>
+                        <div class="followmegithub">
+                            <div style="color: aliceblue; margin: auto;">Follow Me<img style="margin-bottom: 2px; margin-left: 10px; " class="rotate-45" id="addmedisc" src="../images/plus.svg"></div>
+                        </div>
+                            <div class="gline"></div>
+                        <p style="font-weight: 700;"><br>ABOUT ME :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <p>Wait , who's Mincrfter?<br> Cy0ze is god</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
     
 
@@ -90,6 +122,14 @@
                     'visibility': 'visible',
                     'height': '50px'
                 });
+                $('.scontact').css( {
+                    'visibility': 'visible',
+                    'height': '50px'
+                });
+                $('.github').css( {
+                    'height': '32px',
+                    'width': '32px',
+                });
             });
             $('.unrevealcontacts').click(function() {
                 $(this).css( {
@@ -112,13 +152,22 @@
                 });
                 $('.discord').css( {
                     'height': '0px',
-                    'width': '0px',
+                    'width': '32px',
                 });
                 $('.acontact').css( {
                     'visibility': 'hidden',
                     'height': '0px'
                 });
+                $('.scontact').css( {
+                    'visibility': 'hidden',
+                    'height': '0px'
+                });
+                $('.github').css( {
+                    'height': '0px',
+                    'width': '32px',
+                });
             });
+            /*Discord*/
             $('.discord').click(function() { 
                 $('.discordcontact').css( {
                     'align-items': 'center',
@@ -126,11 +175,14 @@
                     'height': '75%',
                     'visibility': 'visible'
                 });
-                $('.blur').css( {
+                $('.blurd').css( {
                     'visibility': 'visible'
                 });
+                $('.dcontact').css({ 
+                    'visibility': 'visible',
+                });
             });
-            $('.blur').click(function() { 
+            $('.blurd').click(function() { 
                 $('.discordcontact').css( {
                     'height': '0px',
                     'width': '0px',
@@ -139,12 +191,46 @@
                 $(this).css({
                     'visibility': 'hidden',
                 });
+                $('.dcontact').css({ 
+                    'visibility': 'hidden',
+                });
             });
             $('#addmedisc').click(function() { 
                 $(location).prop('href', 'https://discord.com/users/1080643375960707092')
             });
             $('.addmediscord').click(function() { 
                 $(location).prop('href', 'https://discord.com/users/1080643375960707092')
+            });
+            /*Github*/
+            $('.github').click(function() { 
+                $('.githubcontact').css( {
+                    'align-items': 'center',
+                    'width': '75%',
+                    'height': '75%',
+                    'visibility': 'visible'
+                });
+                $('.blurg').css( {
+                    'visibility': 'visible'
+                });
+                $('.gcontact').css({ 
+                    'visibility': 'visible',
+                });
+            });
+            $('.blurg').click(function() { 
+                $('.githubcontact').css( {
+                    'height': '0px',
+                    'width': '0px',
+                    'visibility': 'hidden',
+                });
+                $(this).css({
+                    'visibility': 'hidden',
+                });
+                $('.gcontact').css({ 
+                    'visibility': 'hidden',
+                });
+            });
+            $('.followmegithub').click(function() { 
+                $(location).prop('href', 'https://github.com/Asicalug')
             });
     </script>
 </body>
