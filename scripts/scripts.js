@@ -118,32 +118,5 @@ $('.addmediscord').click(function() {
 });
 /*Github*/
 $('.github').click(function() { 
-    $('.githubcontact').css( {
-        'align-items': 'center',
-        'width': '75%',
-        'height': '75%',
-        'visibility': 'visible'
-    });
-    $('.blurg').css( {
-        'visibility': 'visible'
-    });
-    $('.gcontact').css({ 
-        'visibility': 'visible',
-    });
-});
-$('.blurg').click(function() { 
-    $('.githubcontact').css( {
-        'height': '0px',
-        'width': '0px',
-        'visibility': 'hidden',
-    });
-    $(this).css({
-        'visibility': 'hidden',
-    });
-    $('.gcontact').css({ 
-        'visibility': 'hidden',
-    });
-});
-$('.followmegithub').click(function() { 
-    $(location).prop('href', 'https://github.com/Asicalug')
+    $(location).prop('href', 'https://github.com/Asicalug/asicalug.github.io')
 });
