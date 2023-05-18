@@ -40,7 +40,7 @@
         <!--Discord Account-->
 
         <div class="blurd">
-            <div class="discordcontact dcontainer">
+            <div class="discordcontact dcontainer1">
             <div class="center">
                 <div class="dcontact">
                     <div class="dcontainer">
@@ -67,10 +67,10 @@
         <!--Github Account-->
 
         <div class="blurg">
-            <div class="githubcontact dcontainer">
+            <div class="githubcontact gcontainer">
             <div class="center">
                 <div class="gcontact">
-                    <div class="dcontainer">
+                    <div class="container">
                         <img class="pfp" src="https://cdn.discordapp.com/avatars/1080643375960707092/b4e2a3f1e27d130f37ee96d1fe81a748.webp?size=64"/>
                     </div>
                     <div class="gbadges">
@@ -83,7 +83,7 @@
                             <div style="color: aliceblue; margin: auto;">Follow Me<img style="margin-bottom: 2px; margin-left: 10px; " class="rotate-45" id="addmedisc" src="../images/plus.svg"></div>
                         </div>
                             <div class="gline"></div>
-                        <p style="font-weight: 700;"><br>ABOUT ME :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <p style="font-weight: 700;"><br>ABOUT ME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                         <p>Wait , who's Mincrfter?<br> Cy0ze is god</p>
                     </div>
                 </div>
@@ -181,6 +181,12 @@
                 $('.dcontact').css({ 
                     'visibility': 'visible',
                 });
+                $('.dcontainer1').css( {
+                    'min-width': '470px',
+                    'min-height': '500px',
+                    'max-width': '470px',
+                    'max-height': '500px',
+                });
             });
             $('.blurd').click(function() { 
                 $('.discordcontact').css( {
@@ -193,6 +199,12 @@
                 });
                 $('.dcontact').css({ 
                     'visibility': 'hidden',
+                });
+                $('.dcontainer1').css( {
+                    'min-width': '0px',
+                    'min-height': '0px',
+                    'max-width': '0px',
+                    'max-height': '0px',
                 });
             });
             $('#addmedisc').click(function() { 

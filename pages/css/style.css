@@ -15,7 +15,18 @@
         top: 25px;
         border-radius: 15px;
         margin: auto; 
-        }
+    }
+    .dcontainer1 {
+        min-width: 0px;
+        min-height: 0px;
+        max-width: 0px;
+        max-height: 0px;
+        position: relative;
+        top: 25px;
+        border-radius: 15px;
+        margin: auto;
+        transition: all 0.6s; 
+    }
 /*BackGround*/
     body {
         background-color: rgb(22, 22, 22);
