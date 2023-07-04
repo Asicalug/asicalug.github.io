@@ -1,0 +1,354 @@
+/*Actual storage part*/
+    .button {
+         padding: 10px;
+         min-width: 50%;
+         min-height: 100%;
+         background-color: #313338;
+         border-radius: 15px;
+         color: #ffffff;
+    }
+
+
+
+
+
+
+/*Containers*/
+    .container {
+        max-width: 500px;
+        max-height: 500px;
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+    }
+    .dcontainer {
+        width: 250px;
+        height: 100px;
+        position: relative;
+        top: 25px;
+        border-radius: 15px;
+        margin: auto; 
+    }
+    .dcontainer1 {
+        min-width: 0px;
+        min-height: 0px;
+        max-width: 0px;
+        max-height: 0px;
+        position: relative;
+        top: 25px;
+        border-radius: 15px;
+        margin: auto;
+        transition: all 0.6s; 
+    }
+/*BackGround*/
+    body {
+        background-color: rgb(22, 22, 22);
+    }
+/* Top Bar Content */
+    .topbar {
+        width: 95%;
+        height: 100px;
+        margin: auto;
+        border-radius: 15px;
+        background-color: rgb(79, 79, 79);
+        transition: all 0.3s;
+
+        animation: revealTopbar ease-out 1s;
+    }
+    .avatar {
+        position: relative;
+        margin-left: 25px;
+        border-radius: 60px;
+        top: 18px;
+        box-shadow: 0px 0px 6px 1px #007ade;
+        color: rgb(255, 255, 255);
+        width: 64px;
+        height: 64px;
+    }
+    .description {
+        position: relative;
+        background-color: rgb(49, 49, 49);
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+        bottom: 32px;
+        border-radius: 15px;
+        color: aliceblue;
+        margin: auto;
+        font-size: large;
+    }
+    .revealcontacts {
+        position: relative;
+        width: 15px;
+        background-color: gray;
+        bottom: 25px;
+        border-radius: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(270deg);
+        transition: ease-out 0.2s;
+    }
+    .revealcontacts:hover {
+        box-shadow: 0 0 2px 2px gray;
+    }
+    .unrevealcontacts {
+        position: relative;
+        visibility: hidden;
+        width: 15px;
+        background-color: gray;
+        border-radius: 30px;
+        bottom: 93px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(270deg);
+    }
+    .unrevealcontacts:hover {
+        box-shadow: 0 0 2px 2px gray;
+    }
+    .contacts {
+        position: relative;
+        visibility: hidden;
+        margin: auto;
+        width: 90%;
+        height: 0px;
+        background-color: rgb(69, 69, 69);
+        bottom: 150px;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+    .discord {
+        position: relative;
+        top: 13px;
+        width: 32px;
+        height: 0px;
+        background-image: url(../../images/discord.svg);
+        left: 15px;
+        transition: all 0.3s;
+    }
+    .discordcontact {
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        z-index: 5;
+        width: 0px;
+        height: 0px;
+        border-radius: 30px;
+        background-color: rgb(44, 44, 44)
+;
+        transition: all 0.3s;
+    }
+    .acontact {
+        position: absolute;
+        visibility: hidden;
+        margin-left: 10px;
+        top: 15px;
+        width: 64px;
+        height: 0px;
+        background-color: rgb(44, 44, 44);
+        bottom: 15px;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+    .scontact {
+        position: absolute;
+        visibility: hidden;
+        right: 10px;
+        width: 64px;
+        height: 0px;
+        background-color: rgb(44, 44, 44);
+        top: 15px;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+    .dcontact {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 75%;
+        height: 75%;
+        background-image: linear-gradient(to bottom , #770000, #000000);
+        background-color: #313338;
+        box-shadow: 0px 0px 0px 3px #770000;
+        border-radius: 15px;
+    }
+    .ddescription {
+        position: absolute;
+        background-color: #303030;
+        width: 80%;
+        height: 70%;
+        border-radius: 15px;
+        color: aliceblue;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+    }
+    .pfp {
+        position: absolute;
+        width: 64;
+        height: 64;
+        border-radius: 64px;
+        box-shadow: 0px 0px 6px 6px #23a55a;
+        justify-content: center;
+        top: 24px;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0; 
+        margin-right: 200px;
+        margin-bottom: 40px;
+    }
+    .github {
+        position: relative;
+        top: 9.5px;
+        width: 32px;
+        height: 0px;
+        background-image: url(../../images/github.svg);
+        left: 15px;
+        transition: all 0.3s;
+    }
+    .githubcontact {
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        z-index: 5;
+        width: 0px;
+        height: 0px;
+        border-radius: 30px;
+        background-color: rgb(44, 44, 44)
+;
+        transition: all 0.3s;
+    }
+    .gcontact {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 75%;
+        height: 75%;
+        background-image: linear-gradient(to bottom , #770000, #000000);
+        background-color: #313338;
+        box-shadow: 0px 0px 0px 3px #770000;
+        border-radius: 15px;
+    }
+    
+/*Discord*/
+    .discordembed {
+        position: relative;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        padding: 15px;
+        background-color: rgb(30, 30, 30);
+        border-radius: 15px;
+        color: aliceblue;
+    }
+    .dsmallline {
+        width: 50%;
+        height: 2px;
+        background-color: aliceblue;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        margin-top: 18%;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+    .dline {
+        width: 95%;
+        height: 1px;
+        background-color: aliceblue;
+        position: absolute;
+        top: 0;
+        bottom: 110px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        margin-top: 35%;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+    .rotate-45 {
+        transform: rotate(45deg);
+        transition: all 0.2s;
+    }
+    .rotate-45:hover {
+        transform: rotate(135deg);
+    }
+    .dbadges {
+        position: relative;
+        margin: auto;
+        background-color: #303030;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 5px;
+        bottom: 60px;
+        padding: 3px;
+        padding-bottom: 5px;
+        padding-right: 8px;
+        left: 30%;
+    }
+    .addmediscord {
+        position: relative;
+        margin: auto;
+        background-color: #2b2b2b;
+        width: 35%;
+        height: 35px;
+        border-radius: 5px;
+        padding: 5px;
+        transition: all 0.3s;
+        bottom: 6px;
+    }
+    .addmediscord:hover {
+        box-shadow: 0 0 6px 6px #434343;
+    }
+/*Other*/
+    .blurd {
+        position: absolute;
+        backdrop-filter: blur(10px);
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        z-index: 3;
+        align-items: center;
+    }
+/*Animations*/
+    @keyframes revealTopbar {
+        from {
+        opacity: 0;
+        transform: translateX(-200%);
+        }
+        to {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+
+/*Other Screens ?*/
+    @media only screen and (max-width:500px) {
+
+    }
